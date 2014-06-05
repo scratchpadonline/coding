@@ -4,7 +4,8 @@
     function bodyDidLoad() {
       var q = location.search;
       var js = q.substr(3);
-      alert(js);
+      var decoded = $('<div/>').html(js).text();
+      alert(decoded);
       //eval(js);
     }
     </script>
